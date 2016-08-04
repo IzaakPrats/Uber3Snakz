@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043E9704D2A1431726070856 /* Pods_Uber4Snakz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC5B189DE60BE16F8805203 /* Pods_Uber4Snakz.framework */; };
 		80B9E0AC1D53AE4800E97B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B9E0AB1D53AE4800E97B9C /* AppDelegate.swift */; };
 		80B9E0AE1D53AE4800E97B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B9E0AD1D53AE4800E97B9C /* ViewController.swift */; };
 		80B9E0B11D53AE4800E97B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80B9E0AF1D53AE4800E97B9C /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EC5B189DE60BE16F8805203 /* Pods_Uber4Snakz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber4Snakz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B9E0A81D53AE4800E97B9C /* Uber4Snakz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber4Snakz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B9E0AB1D53AE4800E97B9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80B9E0AD1D53AE4800E97B9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		80B9E0B21D53AE4800E97B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80B9E0B51D53AE4800E97B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80B9E0B71D53AE4800E97B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822C4C92836B0C0445316EBB /* Pods-Uber4Snakz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber4Snakz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber4Snakz/Pods-Uber4Snakz.release.xcconfig"; sourceTree = "<group>"; };
+		FE8D5E46F98FC844BE6672D4 /* Pods-Uber4Snakz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber4Snakz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uber4Snakz/Pods-Uber4Snakz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043E9704D2A1431726070856 /* Pods_Uber4Snakz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19548C34F75FB7BBBFD2364D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE8D5E46F98FC844BE6672D4 /* Pods-Uber4Snakz.debug.xcconfig */,
+				822C4C92836B0C0445316EBB /* Pods-Uber4Snakz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40213CA7129FD83DF136D30B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EC5B189DE60BE16F8805203 /* Pods_Uber4Snakz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80B9E09F1D53AE4800E97B9C = {
 			isa = PBXGroup;
 			children = (
 				80B9E0AA1D53AE4800E97B9C /* Uber4Snakz */,
 				80B9E0A91D53AE4800E97B9C /* Products */,
+				19548C34F75FB7BBBFD2364D /* Pods */,
+				40213CA7129FD83DF136D30B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80B9E0BA1D53AE4800E97B9C /* Build configuration list for PBXNativeTarget "Uber4Snakz" */;
 			buildPhases = (
+				45A6F5AEB3CC93E2FB08B231 /* [CP] Check Pods Manifest.lock */,
 				80B9E0A41D53AE4800E97B9C /* Sources */,
 				80B9E0A51D53AE4800E97B9C /* Frameworks */,
 				80B9E0A61D53AE4800E97B9C /* Resources */,
+				E2F6D317146A4CE164F0EF23 /* [CP] Embed Pods Frameworks */,
+				C2E8A4DE3EAC7462E9C12ED0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45A6F5AEB3CC93E2FB08B231 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2E8A4DE3EAC7462E9C12ED0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uber4Snakz/Pods-Uber4Snakz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2F6D317146A4CE164F0EF23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Uber4Snakz/Pods-Uber4Snakz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80B9E0A41D53AE4800E97B9C /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		80B9E0BB1D53AE4800E97B9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8D5E46F98FC844BE6672D4 /* Pods-Uber4Snakz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Uber4Snakz/Info.plist;
@@ -260,6 +336,7 @@
 		};
 		80B9E0BC1D53AE4800E97B9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822C4C92836B0C0445316EBB /* Pods-Uber4Snakz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Uber4Snakz/Info.plist;
@@ -288,6 +365,7 @@
 				80B9E0BC1D53AE4800E97B9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
